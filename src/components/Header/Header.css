@@ -1,3 +1,14 @@
+.header .header-logo {
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .header-logo h1 {
+    margin-left: 5px;
+}
+
 .header {
     height: 80px;
     background-color: #1C2B35;

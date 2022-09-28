@@ -1,15 +1,21 @@
+
 import React from 'react';
-import logo from '../../images/Logo.svg';
+import { faPersonWalking } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Header.css';
 const Header = () => {
     return (
         <nav className='header'>
-            <img src={logo} alt="" />
+            <div className='header-logo'>
+                <FontAwesomeIcon icon={faPersonWalking} size="5px" ></FontAwesomeIcon>
+                <h1>ActiveGym</h1>
+            </div>
+
             <div>
-                <a href="/shop">Shop</a>
-                <a href="/order">Order</a>
-                <a href="/inventory">Inventory</a>
-                <a href="/about">About</a>
+                <a href="/home">Home</a>
+                <a href="/tutorial">Tutorial</a>
+                <a href="/contact">Contact</a>
+                <a href="/about">About me</a>
 
             </div>
         </nav>
