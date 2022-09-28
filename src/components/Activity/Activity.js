@@ -1,12 +1,12 @@
 import React, { Profiler, useEffect, useState } from 'react';
 // import { addToDb, getStoredCart } from '../../utilities/fakedb';
-// import Cart from '../Cart/Cart';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Activity.css'
 
 const Activity = () => {
     const [products, setProducts] = useState([]);
-    // const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('activity.json')
@@ -47,7 +47,7 @@ const Activity = () => {
     //     addToDb(SelectedProduct.id);
     // }
     return (
-        <div className='shop-container'>
+        <div className='activity-container'>
             <div className="product-container">
                 {
                     products.map(product => <Product
@@ -59,9 +59,9 @@ const Activity = () => {
                 }
             </div>
 
-            {/* <div className='cart-container'>
+            <div className='cart-container'>
                 <Cart cart={cart}></Cart>
-            </div> */}
+            </div>
         </div>
     );
 };

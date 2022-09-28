@@ -10,7 +10,7 @@
     {
         "id": "45fgh",
         "category": "Strength training",
-        "discription": "Strengthening your muscles not only makes you stronger, but also stimulates bone growth, lowers blood sugar, assists with weight control, improves balance and posture, and reduces stress and pain in the lower back and joints.",
+        "discription": "Strengthening your muscles not only makes you stronger, but also stimulates bone growth, lowers blood sugar, assists with weight control, improves balance and posture.",
         "img": "https://cdn.shopify.com/s/files/1/0038/0878/8544/articles/FeaturedImage_StrengthTraining.jpg?v=1593102095",
         "age": "20-45",
         "time": 30
@@ -18,7 +18,7 @@
     {
         "id": "9hsuu",
         "category": "Stretching",
-        "discription": "tretching helps maintain flexibility. We often overlook that in youth when our muscles are healthier. But aging leads to a loss of flexibility in the muscles and tendons.",
+        "discription": "Stretching helps maintain flexibility. We often overlook that in youth when our muscles are healthier. But aging leads to a loss of flexibility in the muscles and tendons.",
         "img": "https://media.gq.com/photos/59a9a273dc3ba42b1cdca2e9/16:9/w_1280,c_limit/2017-09_GQ-FITNESS-Stretching_3x2.jpg",
         "age": "16-40",
         "time": 20
@@ -26,7 +26,7 @@
     {
         "id": "76jahja",
         "category": "Balance exercises",
-        "discription": "Improving your balance makes you feel steadier on your feet and helps prevent falls. It's especially important as we get older, when the systems that help us maintain balance—our vision, our inner ear, and our leg muscles and joints—tend to break down.",
+        "discription": "Improving your balance makes you feel steadier on your feet and helps prevent falls. It's especially important as we get older.",
         "img": "https://www.threespiresphysiotherapy.co.uk/images/blog/258/1/AdobeStock_balanceoneleg.jpeg",
         "age": "10-45",
         "time": 15
@@ -42,7 +42,7 @@
     {
         "id": "13ksj",
         "category": "Yoga",
-        "discription": "Yoga is an ancient and complex practice, rooted in Indian philosophy. It began as a spiritual practice but has become popular as a way of promoting physical and mental well-being. ",
+        "discription": "Yoga is an ancient and complex practice, rooted in Indian philosophy. It has become popular as a way of promoting physical and mental well-being. ",
         "img": "https://www.kurzweilai.net/images/yoga.jpg",
         "age": "10-50",
         "time": 10

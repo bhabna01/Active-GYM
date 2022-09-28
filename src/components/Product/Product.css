@@ -4,6 +4,7 @@
     border: 1px solid #95A0A7;
     border-radius: 8px;
     position: relative;
+    background-color: antiquewhite;
 
 }
 
@@ -18,7 +19,7 @@
 .product-name {
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 21px;
     line-height: 25px;
     letter-spacing: 0.0015em;
@@ -28,6 +29,11 @@
 
 .product-info p {
     margin: 0;
+
+}
+
+.custom {
+    font-weight: 700;
 }
 
 .product-info {
@@ -39,7 +45,7 @@
 
 .btn-cart {
     width: 100%;
-    background: #FFE0B3;
+    background: #b3daff;
     border: none;
     border-radius: 0 0 8px 8px;
     position: absolute;
@@ -47,6 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
 
 }
 

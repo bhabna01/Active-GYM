@@ -11,11 +11,11 @@ const Product = (props) => {
             <div className="product-info">
                 <p className='product-name'>{category}</p>
                 <p><small>{discription}</small></p>
-                <p><small>For Age:{age}</small></p>
-                <p><small>Time Required:{time}m</small></p>
+                <p class="custom"><small>For Age:  {age}</small></p>
+                <p class="custom"><small>Time Required:  {time}m</small></p>
             </div>
             <button onClick={() => handleClick(props.product)} className='btn-cart'>
-                <p className='btn-text'>Add to cart</p>
+                <p className='btn-text'>Add to List</p>
 
             </button>
         </div>

@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav className='header'>
             <div className='header-logo'>
-                <FontAwesomeIcon icon={faPersonWalking} size="5px" ></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faPersonWalking} size="lg" ></FontAwesomeIcon>
                 <h1>ActiveGym</h1>
             </div>
 
