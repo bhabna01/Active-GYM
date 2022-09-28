@@ -1,0 +1,66 @@
+[
+    {
+        "id": "12acf",
+        "category": "Aerobic exercise",
+        "discription": "Aerobic exercise, which speeds up your heart rate and breathing, is important for many body functions. It gives your heart and lungs a workout and increases endurance. ",
+        "img": "https://2.bp.blogspot.com/-hB-R_V2dxpU/ViN4XLZyy6I/AAAAAAAAAkw/K2EgevuYzlw/s1600/aerobic-dance-exercise.jpg",
+        "age": "12-45",
+        "time": 10
+    },
+    {
+        "id": "45fgh",
+        "category": "Strength training",
+        "discription": "Strengthening your muscles not only makes you stronger, but also stimulates bone growth, lowers blood sugar, assists with weight control, improves balance and posture, and reduces stress and pain in the lower back and joints.",
+        "img": "https://cdn.shopify.com/s/files/1/0038/0878/8544/articles/FeaturedImage_StrengthTraining.jpg?v=1593102095",
+        "age": "20-45",
+        "time": 30
+    },
+    {
+        "id": "9hsuu",
+        "category": "Stretching",
+        "discription": "tretching helps maintain flexibility. We often overlook that in youth when our muscles are healthier. But aging leads to a loss of flexibility in the muscles and tendons.",
+        "img": "https://media.gq.com/photos/59a9a273dc3ba42b1cdca2e9/16:9/w_1280,c_limit/2017-09_GQ-FITNESS-Stretching_3x2.jpg",
+        "age": "16-40",
+        "time": 20
+    },
+    {
+        "id": "76jahja",
+        "category": "Balance exercises",
+        "discription": "Improving your balance makes you feel steadier on your feet and helps prevent falls. It's especially important as we get older, when the systems that help us maintain balance—our vision, our inner ear, and our leg muscles and joints—tend to break down.",
+        "img": "https://www.threespiresphysiotherapy.co.uk/images/blog/258/1/AdobeStock_balanceoneleg.jpeg",
+        "age": "10-45",
+        "time": 15
+    },
+    {
+        "id": "090jakd",
+        "category": "Jogging",
+        "discription": "Jogging is often defined as running at a pace less than 6 miles per hour (mph), and it has some significant benefits for people who want to improve their health without overdoing it. ",
+        "img": "https://cdn.britannica.com/11/145611-050-1FF37FF3/Jogging.jpg",
+        "age": "12-45",
+        "time": 20
+    },
+    {
+        "id": "13ksj",
+        "category": "Yoga",
+        "discription": "Yoga is an ancient and complex practice, rooted in Indian philosophy. It began as a spiritual practice but has become popular as a way of promoting physical and mental well-being. ",
+        "img": "https://www.kurzweilai.net/images/yoga.jpg",
+        "age": "10-50",
+        "time": 10
+    },
+    {
+        "id": "992land",
+        "category": "Swimming",
+        "discription": "Swimming, in recreation and sports, the propulsion of the body through water by combined arm and leg motions and the natural flotation of the body.  ",
+        "img": "https://www.paralympic.org/sites/default/files/images/150716174748913_2015%2BIPC%2BSwimming%2BWorld%2BChampionships_20150716_Luc%2BPercival_0042_HD.jpg",
+        "age": "12-45",
+        "time": 20
+    },
+    {
+        "id": "592jmzn",
+        "category": "Cycling",
+        "discription": "cycling, use of a bicycle for sport, recreation, or transportation.  ",
+        "img": "https://www.inyourhometherapy.com/wp-content/uploads/2020/07/cycling-scaled.jpg",
+        "age": "12-45",
+        "time": 10
+    }
+]
