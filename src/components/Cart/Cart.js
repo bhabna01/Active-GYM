@@ -6,6 +6,7 @@ import './Cart.css'
 const Cart = (props) => {
     const { cart } = props;
     const { handleBreakTime } = props;
+    const { time } = props;
 
     let total = 0;
 
@@ -33,9 +34,9 @@ const Cart = (props) => {
                 <h3 style={{ color: "white" }}>Add A break</h3>
                 <div className="btn">
                     <button onClick={() => handleBreakTime(10)} className="btn-sec">10m</button>
-                    <button className="btn-sec">20m</button>
-                    <button className="btn-sec">30m</button>
-                    <button className="btn-sec">40m</button>
+                    <button onClick={() => handleBreakTime(20)} className="btn-sec">20m</button>
+                    <button onClick={() => handleBreakTime(30)} className="btn-sec">30m</button>
+                    <button onClick={() => handleBreakTime(40)} className="btn-sec">40m</button>
                 </div>
 
             </div>
@@ -44,7 +45,7 @@ const Cart = (props) => {
             <div>
                 <h2 style={{ color: "white" }}>Excercise Details</h2>
                 <h4 style={{ color: "white" }}>Excercise Time:{total}</h4>
-                <h4 style={{ color: "white" }}>Break Time:{ }</h4>
+                <h4 style={{ color: "white" }}>Break Time:{time}</h4>
             </div>
             <div>
                 <button onClick={notify} className="toast-button">Activity Completed</button>
@@ -56,4 +57,4 @@ const Cart = (props) => {
 };
 
 
-export default Cart;
+export default Cart; 

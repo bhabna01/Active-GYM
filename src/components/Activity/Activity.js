@@ -1,5 +1,6 @@
 import React, { Profiler, useEffect, useState } from 'react';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
+import Breaktime from '../Breaktime/Breaktime';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Activity.css';
@@ -69,9 +70,12 @@ const Activity = () => {
                     </Product>)
                 }
             </div>
+            {/* <div>
+                <Breaktime handleBreakTime={handleBreakTime}></Breaktime>
+            </div> */}
 
             <div className='cart-container '>
-                <Cart cart={cart} handleBreakTime={handleBreakTime}></Cart>
+                <Cart cart={cart} time={time} handleBreakTime={handleBreakTime}></Cart>
             </div>
         </div>
     );
