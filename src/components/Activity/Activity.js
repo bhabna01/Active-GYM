@@ -2,11 +2,14 @@ import React, { Profiler, useEffect, useState } from 'react';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
-import './Activity.css'
+import './Activity.css';
+
+
 
 const Activity = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [time, setTime] = useState(0);
 
     useEffect(() => {
         fetch('activity.json')
@@ -14,6 +17,14 @@ const Activity = () => {
             .then(data => setProducts(data))
 
     }, [])
+
+
+    useEffect(() => {
+        localStorage.setItem('break-time', time);
+    }, [time]);
+    const handleBreakTime = (breakTime) => {
+        setTime(breakTime);
+    };
     useEffect(() => {
         const storedCart = getStoredCart();
         const savedCart = [];
@@ -59,8 +70,8 @@ const Activity = () => {
                 }
             </div>
 
-            <div className='cart-container'>
-                <Cart cart={cart} ></Cart>
+            <div className='cart-container '>
+                <Cart cart={cart} handleBreakTime={handleBreakTime}></Cart>
             </div>
         </div>
     );
