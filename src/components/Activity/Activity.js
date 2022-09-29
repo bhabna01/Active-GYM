@@ -10,7 +10,7 @@ import './Activity.css';
 const Activity = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    const [time, setTime] = useState(0);
+    const [time, setTime] = useState([]);
 
     useEffect(() => {
         fetch('activity.json')
@@ -70,9 +70,6 @@ const Activity = () => {
                     </Product>)
                 }
             </div>
-            {/* <div>
-                <Breaktime handleBreakTime={handleBreakTime}></Breaktime>
-            </div> */}
 
             <div className='cart-container '>
                 <Cart cart={cart} time={time} handleBreakTime={handleBreakTime}></Cart>
