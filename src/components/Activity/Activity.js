@@ -1,5 +1,5 @@
 import React, { Profiler, useEffect, useState } from 'react';
-// import { addToDb, getStoredCart } from '../../utilities/fakedb';
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Activity.css'
@@ -14,38 +14,38 @@ const Activity = () => {
             .then(data => setProducts(data))
 
     }, [])
-    // useEffect(() => {
-    //     const storedCart = getStoredCart();
-    //     const savedCart = [];
-    //     for (const id in storedCart) {
+    useEffect(() => {
+        const storedCart = getStoredCart();
+        const savedCart = [];
+        for (const id in storedCart) {
 
-    //         const addedProduct = products.find(product => product.id === id)
-    //         if (addedProduct) {
-    //             const quantity = storedCart[id];
-    //             addedProduct.quantity = quantity;
-    //             savedCart.push(addedProduct);
-    //         }
+            const addedProduct = products.find(product => product.id === id)
+            if (addedProduct) {
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                savedCart.push(addedProduct);
+            }
 
-    //     }
-    //     setCart(savedCart);
-    // }, [products])
-    // const handleClick = (SelectedProduct) => {
-    //     console.log(SelectedProduct);
-    //     let newCart = [];
-    //     const exists = cart.find(product => product.id === SelectedProduct.id);
-    //     if (!exists) {
-    //         SelectedProduct.quantity = 1
-    //         newCart = [...cart, SelectedProduct];
-    //     }
-    //     else {
-    //         const rest = cart.filter(product => product.id !== SelectedProduct.id)
-    //         exists.quantity = exists.quantity + 1;
-    //         newCart = [...rest, exists];
-    //     }
+        }
+        setCart(savedCart);
+    }, [products])
+    const handleClick = (SelectedProduct) => {
+        console.log(SelectedProduct);
+        let newCart = [];
+        const exists = cart.find(product => product.id === SelectedProduct.id);
+        if (!exists) {
+            SelectedProduct.quantity = 1
+            newCart = [...cart, SelectedProduct];
+        }
+        else {
+            const rest = cart.filter(product => product.id !== SelectedProduct.id)
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest, exists];
+        }
 
-    //     setCart(newCart);
-    //     addToDb(SelectedProduct.id);
-    // }
+        setCart(newCart);
+        addToDb(SelectedProduct.id);
+    }
     return (
         <div className='activity-container'>
             <div className="product-container">
@@ -53,14 +53,14 @@ const Activity = () => {
                     products.map(product => <Product
                         key={product.id}
                         product={product}
-                    // handleClick={handleClick}
+                        handleClick={handleClick}
                     >
                     </Product>)
                 }
             </div>
 
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} ></Cart>
             </div>
         </div>
     );

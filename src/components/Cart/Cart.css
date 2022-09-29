@@ -7,3 +7,20 @@
 .person-info {
     color: white;
 }
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-sec {
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.btn-sec:hover {
+    background-color: blue;
+}

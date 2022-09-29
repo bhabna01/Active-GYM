@@ -8,7 +8,7 @@ const Header = () => {
         <nav className='header'>
             <div className='header-logo'>
                 <FontAwesomeIcon icon={faPersonWalking} size="lg" ></FontAwesomeIcon>
-                <h1>ActiveGym</h1>
+                <h1>ActiveGYM</h1>
             </div>
 
             <div>
