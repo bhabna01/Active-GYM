@@ -44,8 +44,8 @@ const Cart = (props) => {
 
             <div>
                 <h2 style={{ color: "white" }}>Excercise Details</h2>
-                <h4 style={{ color: "white" }}>Excercise Time:{total}</h4>
-                <h4 style={{ color: "white" }}>Break Time:{time}</h4>
+                <h4 style={{ color: "white" }}>Excercise Time:{total} m</h4>
+                <h4 style={{ color: "white" }}>Break Time:{time} m</h4>
             </div>
             <div>
                 <button onClick={notify} className="toast-button">Activity Completed</button>
