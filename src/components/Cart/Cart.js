@@ -1,19 +1,23 @@
 import React from 'react';
 import Product from '../Product/Product';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css'
 const Cart = (props) => {
     const { cart } = props;
 
     let total = 0;
-    let shipping = 0;
+
     let quantity = 0;
     for (const product of cart) {
         quantity = quantity + product.quantity;
         total = total + product.time * product.quantity;
 
     }
-    // const tax = (total * 0.1).toFixed(2);
-    // const grandtotal = total + shipping + parseFloat(tax);
+
+
+    const notify = () => toast("YOUR ACTIVITY IS COMPLETE!");
+
     return (
         <div className='cart'>
             <div className="person-info">
@@ -41,9 +45,14 @@ const Cart = (props) => {
                 <h4 style={{ color: "white" }}>Excercise Time:{total}</h4>
                 <h4 style={{ color: "white" }}>Break Time:</h4>
             </div>
-            <button style={{ backgroundColor: "Pink", padding: "20px" }}>Activity Completed</button>
+            <div>
+                <button onClick={notify} className="toast-button">Activity Completed</button>
+                <ToastContainer />
+            </div>
+
         </div>
     );
 };
+
 
 export default Cart;

@@ -24,3 +24,14 @@
 .btn-sec:hover {
     background-color: blue;
 }
+
+.toast-button {
+    background-color: pink;
+    padding: 20px;
+    font-weight: 700;
+
+}
+
+.toast-button:hover {
+    background-color: blue;
+}
