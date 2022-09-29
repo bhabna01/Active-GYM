@@ -1,6 +1,6 @@
 import React, { Profiler, useEffect, useState } from 'react';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
-import Breaktime from '../Breaktime/Breaktime';
+
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Activity.css';

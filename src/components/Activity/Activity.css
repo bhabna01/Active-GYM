@@ -24,11 +24,15 @@
         grid-template-columns: repeat(2, 1fr);
     }
 } */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    .activity-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
 
-
-    .products-container {
-        display: grid;
+    .product-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
 }
